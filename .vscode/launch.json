@@ -1,0 +1,23 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "Streamlit: Debug",
+        "type": "python",
+        "request": "attach",
+        "connect": {
+          "host": "localhost",
+          "port": 5676  // Debugger port exposed from Docker Compose
+        },
+        "pathMappings": [
+          {
+            "localRoot": "${workspaceFolder}",  // Your local project directory (streamlit_app folder)
+            "remoteRoot": "/app"  // The directory inside the Docker container
+          }
+        ],
+        "justMyCode": false,
+        "logToFile": true
+      }
+    ]
+  }
+  
