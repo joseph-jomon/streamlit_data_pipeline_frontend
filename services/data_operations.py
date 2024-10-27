@@ -1,7 +1,8 @@
 import httpx
 import streamlit as st
 
-BASE_URL = "http://host.docker.internal:8000/flowfact"
+BASE_URL = "http://backend.kundalin.com/flowfact"
+
 
 # Fetch data function
 def fetch_data(api_key):
