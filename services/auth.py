@@ -1,7 +1,7 @@
 import httpx
 import streamlit as st
 
-BASE_URL = "http://host.docker.internal:8000/flowfact"
+BASE_URL = "http://backend.kundalin.com/flowfact"
 
 def authenticate_api_key(api_key):
     try:
