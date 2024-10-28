@@ -23,7 +23,7 @@ def main():
             #validate_images(api_key)
 
             st.write("Preparing dataset...")
-            prepare_dataset(api_key)
+            #prepare_dataset(api_key)
 
             st.write("Sending data to vectorizer service")
             start_batch_processing()

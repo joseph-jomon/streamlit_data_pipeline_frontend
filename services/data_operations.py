@@ -28,7 +28,7 @@ def validate_images(api_key):
         # Make the API request
         response = httpx.post(f"{BASE_URL}/validate-images/", 
                             params={"api_key": api_key},
-                            timeout=900.0)
+                            timeout=00.0)
         
         # Check if the response is successful
         if response.status_code == 200:
