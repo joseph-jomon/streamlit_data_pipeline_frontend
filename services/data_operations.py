@@ -61,7 +61,7 @@ def start_batch_processing(api_key):
         response = httpx.post(
             f"{BASE_URL}/start-batch-processing/",
             params={"api_key": api_key},
-            timeout=900.0
+            timeout=9000.0
             )
         if response.status_code == 200:
             st.success("Batch processing started!")
