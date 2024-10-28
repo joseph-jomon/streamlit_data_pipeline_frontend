@@ -55,10 +55,14 @@ def prepare_dataset(api_key):
     except Exception as e:
         st.error(f"Error: {str(e)}")
 
-def start_batch_processing():
+def start_batch_processing(api_key):
     try:
         # Trigger the batch processing via the FastAPI endpoint
-        response = httpx.post(f"{BASE_URL}/start-batch-processing/", timeout=900.0)
+        response = httpx.post(
+            f"{BASE_URL}/start-batch-processing/",
+            params={"api_key": api_key},
+            timeout=900.0
+            )
         if response.status_code == 200:
             st.success("Batch processing started!")
         else:
