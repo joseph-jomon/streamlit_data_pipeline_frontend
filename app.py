@@ -17,7 +17,7 @@ def main():
 
             # Automatically call endpoints in sequence
             st.write("Fetching real estate data...")
-            fetch_data(api_key)
+            #fetch_data(api_key)
 
             st.write("Validating images...")
             #validate_images(api_key)
@@ -26,7 +26,7 @@ def main():
             #prepare_dataset(api_key)
 
             st.write("Sending data to vectorizer service")
-            start_batch_processing()
+            start_batch_processing(api_key)
 
             st.success("Process completed!")
         else:
