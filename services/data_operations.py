@@ -29,7 +29,7 @@ async def validate_images(api_key):
             response = await client.post(
                 f"{BASE_URL}/validate-images/", 
                 params={"api_key": api_key},
-                timeout=600.0  # Adjust timeout as needed
+                timeout=1380.0  # Adjust timeout as needed
             )
         
         # Check if the response is successful
