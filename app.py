@@ -20,7 +20,7 @@ def main():
             #fetch_data(api_key)
 
             st.write("Validating images...")
-           # validate_images(api_key)
+            validate_images(api_key)
 
             st.write("Preparing dataset...")
            # prepare_dataset(api_key)
